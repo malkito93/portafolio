@@ -117,13 +117,15 @@ header nav ul li a:hover{
 }
 .container_galery .galery_img.active:hover{
     opacity: 1;
+    transform: none;
+    transition: none;
 }
 
 
 .container_galery .galery_img:hover{
     cursor: pointer;
-    transform: scale(1.02);
-    transition: 0.0s all ease;
+    transform: scale(1.05);
+    transition: 0.5s all ease;
     opacity: 0.7;
 }
 /* .galery_img::after {
@@ -131,3 +133,20 @@ header nav ul li a:hover{
     background-color: black;
 
 } */
+
+/* Sobre mi */
+.container_info{
+    display: flex;
+    padding: 30px;
+}
+.container_info .imagen{
+    width: 50%;
+}
+.container_info .imagen img{
+    display: flex;
+    margin: auto;
+}
+
+.container_info .descripcion{
+    width: 50%;
+}
