@@ -138,14 +138,15 @@ header nav ul li a:hover{
 .container_info{
     display: flex;
     padding: 30px;
+    flex-direction: column;
 }
 .container_info .imagen{
-    width: 30%;
+    width: 100%;
    
 }
 .container_info .imagen img{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     display: flex;
     margin: auto;
     border: solid 1px gray;
@@ -155,6 +156,10 @@ header nav ul li a:hover{
 }
 
 .container_info .descripcion{
-    width: 70%;
-    margin: auto;
+    max-width: 1200px;
+    text-align: center;
+    padding: 10pz 50px;
+}
+.container_info .descripcion p{
+    padding: 0 100px;
 }
