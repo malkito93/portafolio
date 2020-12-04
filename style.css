@@ -1,0 +1,133 @@
+body{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header{
+    background-color:#eeeeee;
+    padding: 10px 50px;
+}
+header h1{
+    display: block;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 600;
+    opacity: 70%;
+    margin-bottom: 45px;
+    
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+header nav ul li {
+    display:block;
+    margin: 0 auto ;
+    text-align: center;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover{
+    cursor: pointer;
+    color: rgb(81, 90, 212);
+}
+
+/* body */
+/* .container .grid{
+    display: grid;
+    height: 350px;
+    grid-template-columns: 415px 415px 415px;
+    margin: 30px;
+    grid-column-gap: 30px;
+    
+}
+.container .grid .item{
+    border: solid gray 1px;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+} */
+/* .container .grid .item .img {
+    background-color: gray;
+    height: 300px;
+    overflow: hidden;
+  
+} */
+
+.container_galery{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 45px;
+}
+
+.container_galery #closer {
+    font-size: 36px;
+    font-weight: 400;
+    display: block;
+    display: none;
+    color: white;
+    position: fixed;
+    top: 5px;
+    right: 55px;
+    cursor: pointer;
+    z-index: 6000;
+}
+
+.container_galery .img_container{
+    margin-bottom: 30px;
+}
+
+.container_galery .img_container p {
+    margin: 0;
+    color: gray;
+    text-align: center;
+    font-size: 12px;
+}
+
+
+.container_galery .galery_img { 
+    width: 400px;
+    height: 350px;
+    object-fit: cover;
+    border: solid 1px rgb(185, 185, 185);
+    border-radius: 3px;
+    position: relative;
+}
+.container_galery .galery_img.active { 
+    width:100%;
+    height: 100vh;
+    object-fit: contain;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color:rgba(0, 0, 0, 0.90);
+    
+}
+.container_galery .galery_img.active:hover{
+    opacity: 1;
+}
+
+
+.container_galery .galery_img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.0s all ease;
+    opacity: 0.7;
+}
+/* .galery_img::after {
+    content:'';
+    background-color: black;
+
+} */
