@@ -140,13 +140,21 @@ header nav ul li a:hover{
     padding: 30px;
 }
 .container_info .imagen{
-    width: 50%;
+    width: 30%;
+   
 }
 .container_info .imagen img{
+    width: 300px;
+    height: 300px;
     display: flex;
     margin: auto;
+    border: solid 1px gray;
+    border-radius: 500px;
+    object-fit: contain;
+    
 }
 
 .container_info .descripcion{
-    width: 50%;
+    width: 70%;
+    margin: auto;
 }
