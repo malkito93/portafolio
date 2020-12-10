@@ -7,6 +7,13 @@ modal.forEach (galery_img =>{
 })
 });
 
+/*
+var color = document.querySelector(".diseno");
+color.addEventListener('click', function(){
+        color.p.style.color = #c4c4c4;
+}) 
+*/
+
 // boton menu responsive
 const burger_menu = document.getElementById('burger_menu')
 const ul_menu = document.getElementsByClassName('ul_menu')
