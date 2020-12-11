@@ -240,7 +240,9 @@ header nav ul li a:hover{
 }
 
 .container_galery .subtitulo{
-    width: 90%; 
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%; 
     padding: 0 25px; 
     padding-bottom: 5px;
     font-size: 18px; 
