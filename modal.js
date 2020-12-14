@@ -1,11 +1,21 @@
 const modal = document.querySelectorAll(".galery_img");
+const closer = document.getElementById('closer')
 
 modal.forEach (galery_img =>{
         galery_img.addEventListener('click', function () {
         // alert('click')
         galery_img.classList.toggle('active')
+        closer.style.display = 'block'    
 })
 });
+
+closer.addEventListener('click',function(){
+        closer.style.display = 'none';
+        modal.forEach (galery_img =>{
+                galery_img.classList.remove('active')
+               
+        })
+        });
 
 /*
 var color = document.querySelector(".diseno");
@@ -23,5 +33,5 @@ burger_menu.addEventListener('click',function(){
 })
 
 var ventana_actual = window.location
-        console.log(ventana_actual)
+        //console.log(ventana_actual)
 // boton de cerrar modal

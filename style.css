@@ -41,19 +41,22 @@ header h1::selection{
 header #burger_menu{
     display: none;
 }
+header nav{
+    padding-bottom: 10px;
+}
 header nav ul {
     display: flex;
     list-style: none;
     width: 70%;
     margin: 0 auto;
     padding: 0;
-    
 }
 
 header nav ul li {
     display:block;
     margin: 0 auto ;
     text-align: center;
+    
 }
 
 header nav ul li a{
@@ -64,6 +67,7 @@ header nav ul li a:hover{
     cursor: pointer;
     color: rgb(81, 90, 212);
 }
+/* responsive settings */
 
 @media only screen and (max-width:767px){
     body{
@@ -109,7 +113,7 @@ header nav ul li a:hover{
         width: 50%;
         margin: 0 auto;
         padding: 0;
-        
+        padding-bottom: 10px;
     }
     header nav ul.show{
         display: block;
@@ -146,14 +150,13 @@ header nav ul li a:hover{
     .container_galery #closer {
         font-size: 36px;
         font-weight: 400;
-        display: block;
-        display: none;
-        color: white;
-        position: fixed;
+        display: inline-block;
+        color: red;
+        position: absolute;
         top: 5px;
-        right: 55px;
+        right: 5px;
         cursor: pointer;
-        z-index: 6000;
+        z-index: 10000;
     }
     
     .container_galery .img_container{
@@ -185,16 +188,7 @@ header nav ul li a:hover{
         left: 0;
         z-index: 100;
         background-color:rgba(0, 0, 0, 0.90); 
-    
-    }
-    .container_galery .galery_img.active::after {
-        contain: 'Esto es una prueba';
-        font-size: 130px;
-        color: white;
-        position: absolute;
-        top: 30px;
-        right: 30px;
-        z-index: 9000;
+
     }
 
     .container_galery .galery_img.active:hover{
@@ -251,17 +245,17 @@ header nav ul li a:hover{
     text-align: center;
     /* border-bottom: solid 1px gray; */
 }
+
 .container_galery #closer {
     font-size: 36px;
     font-weight: 400;
-    display: block;
     display: none;
     color: white;
     position: fixed;
     top: 5px;
     right: 55px;
     cursor: pointer;
-    z-index: 6000;
+    z-index: 1000;
 }
 
 .container_galery .img_container{
