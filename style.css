@@ -250,6 +250,7 @@ header nav ul li a:hover{
     font-size: 36px;
     font-weight: 400;
     display: none;
+    padding: 0 20px;
     color: gray;
     position: fixed;
     top: 5px;
@@ -292,6 +293,7 @@ header nav ul li a:hover{
 
 .container_galery .galery_img.active:hover{
     opacity: 1;
+    cursor:unset;
     transform: none;
     transition: none;
 }
