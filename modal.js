@@ -1,10 +1,11 @@
 const modal = document.querySelectorAll(".galery_img");
 const closer = document.getElementById('closer')
+var container = document.querySelector('.img_container')
 
 modal.forEach (galery_img =>{
         galery_img.addEventListener('click', function () {
         // alert('click')
-        galery_img.classList.toggle('active')
+        galery_img.classList.add('active')
         closer.style.display = 'block'    
 })
 });

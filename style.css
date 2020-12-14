@@ -250,12 +250,13 @@ header nav ul li a:hover{
     font-size: 36px;
     font-weight: 400;
     display: none;
-    color: white;
+    color: gray;
     position: fixed;
     top: 5px;
     right: 55px;
     cursor: pointer;
     z-index: 1000;
+    
 }
 
 .container_galery .img_container{
