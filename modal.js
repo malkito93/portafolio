@@ -2,6 +2,7 @@ const modal = document.querySelectorAll(".galery_img");
 const closer = document.getElementById('closer')
 var container = document.querySelector('.img_container')
 
+
 modal.forEach (galery_img =>{
         galery_img.addEventListener('click', function () {
         // alert('click')
@@ -36,3 +37,17 @@ burger_menu.addEventListener('click',function(){
 var ventana_actual = window.location
         //console.log(ventana_actual)
 // boton de cerrar modal
+
+//Sobre mi
+var containerModal = document.getElementById('container_modal_about')
+var aboutMe = document.getElementById('about_me')
+var close = document.getElementById('close_modal')
+console.log('close')
+
+aboutMe.addEventListener('click', () => {
+        containerModal.style.visibility = 'visible'
+})
+
+close.addEventListener('click', ()=>{
+        containerModal.style.visibility = 'hidden'
+})
