@@ -22,7 +22,8 @@ header h1{
 }
 header h2{
     justify-content: center;
-    border: solid 1px gray;
+    border: solid 1px rgb(36, 36, 246);
+    color: rgb(36, 36, 246);
     width: 40px;
     height: 40px;
     text-align: center;
@@ -72,7 +73,115 @@ header nav ul li a:hover{
     color: rgb(81, 90, 212);
 }
 /* responsive settings */
+@media only screen and (max-width:1023px){
+    .container_info{
+        display: flex;
+        padding: 30px;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    
+    .container_info .imagen{
+        width: 100%;
+       
+    }
+    .container_info .imagen img{
+        width: 400px;
+        height: 400px;
+        display: flex;
+        margin: auto;
+        /* border: solid 1px gray;
+        border-radius: 500px; */
+        object-fit: contain;
+        
+    }
+    
+    .container_info .descripcion{
+        max-width: 1200px;
+        text-align: center;
+        padding: 10pz 50px;
+    }
 
+    .container_info .descripcion p{
+        padding: 0 100px;
+    }
+    
+    /* Modal About me */
+    
+    .modal_container{
+        display: flex;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.80);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        top: 0; 
+        left: 0;
+        visibility: hidden;
+        overflow: hidden;
+        font-size: 14px;
+    
+    
+    }
+    .modal_container .modal{
+        display: flex;
+        width: 75%;
+        height: 500px;
+        background: white;
+        margin: 0 auto;
+        border-radius: 35px;
+        position: relative;
+        
+    }
+    .modal_container .modal .close{
+        background-color: #eeeeee;
+        border-radius: 50px;
+        margin: 16px;
+        height: 50p;
+        font-weight: 600;
+        font-size: 16px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        padding: 5px 12px;
+        color: black;
+    }
+    .modal_container .modal .close:hover{
+        cursor: pointer;
+        background-color: rgb(81, 90, 212);
+        color: white;
+        transition: 0.2s;
+    }
+    .modal_container .modal .modal_info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .modal_container .modal .modal_info span {
+        margin: 15px auto;
+        border-radius: 200px;
+        width: 250px;
+        height: 250px;
+        overflow: hidden;
+        border: solid 1px#cbcbcb;
+    }
+    
+    .modal_container .modal  .modal_text{
+        background-color: #eeeeee;
+        width: 100%;
+        height: 60%;
+        /* margin-left: 20px; */
+        margin-top: auto;
+        margin-bottom: auto;
+        padding: 25px 35px;
+        border-radius: 20px;
+        /* min-width: 470px; */
+        margin-right: 65px;
+        overflow: scroll;
+    }
+    
+}
 @media only screen and (max-width:767px){
     body{
         width: 100%;
@@ -208,8 +317,78 @@ header nav ul li a:hover{
     .container_galery .galery_img:hover{
         cursor: none;
     }
+      /* Modal responsive About me*/
+    
+    .modal_container{
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.80);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    visibility: hidden;
+    }
+    .modal_container .modal{
+    display: flex;
+    width: 75%;
+    height: 500px;
+    background: white;
+    margin: 0 auto;
+    border-radius: 35px;
+    position: relative;
+    flex-wrap: wrap;
+    
+    }
+    .modal_container .modal .close{
+    background-color: #eeeeee;
+    border-radius: 50px;
+    margin: 16px;
+    height: 50p;
+    font-weight: 600;
+    font-size: 16px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 5px 12px;
+    color: black;
+    }
+    .modal_container .modal .close:hover{
+    cursor: pointer;
+    background-color: rgb(81, 90, 212);
+    color: white;
+    transition: 0.2s;
+    }
+    .modal_container .modal .modal_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .modal_container .modal .modal_info span {
+    margin: 15px auto;
+    border-radius: 200px;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border: solid 1px#cbcbcb;
+    }
 
-    @media only screen and (max-width:375px){
+    .modal_container .modal  .modal_text{
+    background-color: #eeeeee;
+    width: 100%;
+    height: 60%;
+    /* margin-left: 20px; */
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 25px 35px;
+    border-radius: 20px;
+    }
+    /* fin de menu responsive */
+}
+
+@media only screen and (max-width:375px){
         
     .container_galery .img_container{
         margin-bottom: 30px;
@@ -243,10 +422,7 @@ header nav ul li a:hover{
         left: 0;
         z-index: 100;
         background-color:rgba(0, 0, 0, 0.90); 
-
     }
-    }
-    /* fin de menu responsive */
 }
 
 /* body */
@@ -390,7 +566,7 @@ z-index: ;
     padding: 0 100px;
 }
 
-/* Modal  */
+/* Modal About me */
 
 .modal_container{
     display: flex;
@@ -436,7 +612,7 @@ z-index: ;
     transition: 0.2s;
 }
 .modal_container .modal .modal_info {
-    width: 45%;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -452,12 +628,15 @@ z-index: ;
 
 .modal_container .modal  .modal_text{
     background-color: #eeeeee;
-    width: 40%;
+    width: 100%;
     height: 60%;
     /* margin-left: 20px; */
     margin-top: auto;
     margin-bottom: auto;
     padding: 25px 35px;
     border-radius: 20px;
+    /* min-width: 470px; */
+    margin-right: 65px;
+    overflow: scroll;
 }
 
