@@ -469,18 +469,23 @@ header nav ul li a:hover{
 }
 
 .container_galery #closer {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 400;
     display: none;
     padding: 0 20px;
-    color: gray;
+    color: black;
     position: fixed;
     top: 5px;
     right: 55px;
     cursor: pointer;
     z-index: 1000;
-    
+    background: gray;
+    border-radius: 50px;
+    border: solid 1px black;
+    padding: 0px 12px;
 }
+    
+
 
 .container_galery .img_container{
     margin-bottom: 30px;
