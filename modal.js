@@ -45,9 +45,11 @@ var close = document.getElementById('close_modal')
 console.log('close')
 
 aboutMe.addEventListener('click', () => {
+        document.body.classList.add('responsive')
         containerModal.style.visibility = 'visible'
 })
 
 close.addEventListener('click', ()=>{
+        document.body.classList.remove('responsive')
         containerModal.style.visibility = 'hidden'
 })
